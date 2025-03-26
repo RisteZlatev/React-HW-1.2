@@ -1,0 +1,44 @@
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #00c853, #b2ff59); 
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    gap: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.info::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 5px auto;
+}
+
+.info:last-child::after {
+    display: none;
+}
+
+.infoCard:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
